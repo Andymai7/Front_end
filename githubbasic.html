@@ -1,0 +1,242 @@
+<!-- basic command line push to remote -->
+
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ ls
+assets  index.html  jquery.js  phongvu.html
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git init
+Reinitialized existing Git repository in /home/andy/Desktop/Front_end/phongvu_andymai/.git/
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git status
+On branch master
+nothing to commit, working tree clean
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git commit -m "first commit"
+On branch master
+nothing to commit, working tree clean
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git remote add origin https://github.com/Andymai7/Front_end.git
+fatal: remote origin already exists.
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/Andymai7/Front_end.git'
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git push -u origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git push --set-uptream origin master
+error: unknown option `set-uptream'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules[=(check|on-demand|no)]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ it push --set-upstream origin master
+it: command not found
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git push --set-upstream origin master
+Username for 'https://github.com': 
+Password for 'https://github.com': 
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/Andymai7/Front_end.git/'
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git push --set-upstream origin master
+Username for 'https://github.com': Andymai7
+Password for 'https://Andymai7@github.com': 
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
+fatal: Authentication failed for 'https://github.com/Andymai7/Front_end.git/'
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git push --set-upstream origin master
+Username for 'https://github.com': Andymai7
+Password for 'https://Andymai7@github.com': 
+Enumerating objects: 2254, done.
+Counting objects: 100% (2254/2254), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2251/2251), done.
+Writing objects: 100% (2254/2254), 32.94 MiB | 4.65 MiB/s, done.
+Total 2254 (delta 334), reused 0 (delta 0)
+remote: Resolving deltas: 100% (334/334), done.
+To https://github.com/Andymai7/Front_end.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git add *
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git commit -m
+error: switch `m' requires a value
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git commit -m "new exist"
+[master a71228f] new exist
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git push
+Username for 'https://github.com': Andymai7
+Password for 'https://Andymai7@github.com': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 320 bytes | 320.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Andymai7/Front_end.git
+   d23c75c..a71228f  master -> master
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git history
+git: 'history' is not a git command. See 'git --help'.
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git log
+commit a71228f5e4d8c37d4c00f7d5b82b8f0aadf753dd (HEAD -> master, origin/master)
+Author: Andymai7 <maivangiap.vcu@gmail.com>
+Date:   Tue Dec 7 12:30:42 2021 +0700
+
+    new exist
+
+commit d23c75c7c395fcb1c6f2d3211d69cb8152c396f3
+Author: Andymai7 <maivangiap.vcu@gmail.com>
+Date:   Mon Dec 6 20:49:55 2021 +0700
+
+    my first project
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git log --pretty=%cd
+Tue Dec 7 12:30:42 2021 +0700
+Mon Dec 6 20:49:55 2021 +0700
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git log --stat 
+commit a71228f5e4d8c37d4c00f7d5b82b8f0aadf753dd (HEAD -> master, origin/master)
+Author: Andymai7 <maivangiap.vcu@gmail.com>
+Date:   Tue Dec 7 12:30:42 2021 +0700
+
+    new exist
+
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d23c75c7c395fcb1c6f2d3211d69cb8152c396f3
+Author: Andymai7 <maivangiap.vcu@gmail.com>
+Date:   Mon Dec 6 20:49:55 2021 +0700
+
+    my first project
+
+ assets/Fonts/fontawesome/LICENSE.txt               |    34 +
+ assets/Fonts/fontawesome/attribution.js            |     3 +
+ assets/Fonts/fontawesome/css/all.css               |  4616 ++
+ assets/Fonts/fontawesome/css/all.min.css           |     5 +
+ assets/Fonts/fontawesome/css/brands.css            |    15 +
+ assets/Fonts/fontawesome/css/brands.min.css        |     5 +
+ assets/Fonts/fontawesome/css/fontawesome.css       |  4582 ++
+ assets/Fonts/fontawesome/css/fontawesome.min.css   |     5 +
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git log
+commit a71228f5e4d8c37d4c00f7d5b82b8f0aadf753dd (HEAD -> master, origin/master)
+Author: Andymai7 <maivangiap.vcu@gmail.com>
+Date:   Tue Dec 7 12:30:42 2021 +0700
+
+    new exist
+
+commit d23c75c7c395fcb1c6f2d3211d69cb8152c396f3
+Author: Andymai7 <maivangiap.vcu@gmail.com>
+Date:   Mon Dec 6 20:49:55 2021 +0700
+
+    my first project
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git checkout d23c75c7c395fcb1c6f2d3211d69cb8152c396f3
+Note: switching to 'd23c75c7c395fcb1c6f2d3211d69cb8152c396f3'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at d23c75c my first project
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git status
+HEAD detached at d23c75c
+nothing to commit, working tree clean
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git log
+commit d23c75c7c395fcb1c6f2d3211d69cb8152c396f3 (HEAD)
+Author: Andymai7 <maivangiap.vcu@gmail.com>
+Date:   Mon Dec 6 20:49:55 2021 +0700
+
+    my first project
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git push --force
+fatal: You are not currently on a branch.
+To push the history leading to the current (detached HEAD)
+state now, use
+
+    git push origin HEAD:<name-of-remote-branch>
+
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git push origin HEAD:<name-of-remote-branch>
+bash: syntax error near unexpected token `newline'
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git push origin master --force
+Username for 'https://github.com': Andymai7
+Password for 'https://Andymai7@github.com': 
+Everything up-to-date
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git status
+HEAD detached at d23c75c
+nothing to commit, working tree clean
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git che
+checkout      cherry        cherry-pick   
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ git checkout master 
+Previous HEAD position was d23c75c my first project
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+andy@andy-pc:~/Desktop/Front_end/phongvu_andymai$ 
