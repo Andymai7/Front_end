@@ -784,6 +784,10 @@
 }  */
 /* End bugs hover */
 
+.menu__item-link:hover {
+  text-decoration: none;
+}
+
 .menu__item-inner:hover  {
   color: #1435c3;
   background-color: #f3f5fc;
@@ -792,6 +796,11 @@
 
 .menu__item-inner:hover .menu__item-caption {
   color: #1435c3;
+}
+
+.menu__title-list:hover .menu__title-name {
+  color: #82869e;
+  text-decoration: none;
 }
 
 .sidebar__list-bottom {
@@ -886,14 +895,8 @@
    border-radius: 8px 8px 0px 0px;
    list-style: none;
 }
-/* Bugs click on active siblings didn't remove */
 
-/* .active {
-  background-color: #661614;
-  color: var(--white-color);
-} */
-
-.active , .bigDeal__inner-header:hover {
+.bigDeal__inner-header.active  {
   background-color: #661614;
   color: var(--white-color);
 }
@@ -966,12 +969,6 @@
   max-width: 16,67%;
 }
 
-.bigDeal__footer-subitem .bigDeal-col-10 {
-  display: block;
-  flex: 0 0 83,33%;
-  max-width: 83,33%;
-}
-
 .bigDeal__footer-timeOut {
   position: relative;
   left: 16px;
@@ -992,6 +989,147 @@
   font-weight: 600;
   line-height: 24px;
 }
+
+
+
+.bigDeal__footer-subitem .bigDeal-col-10 {
+  display: block;
+  flex: 0 0 83,33%;
+  max-width: 83,33%;
+  background-color: transparent;
+  border-width: 1px;
+}
+
+.bigDeal__list-wrap {
+  margin-left: 48px;
+  margin-right: 16px;
+}
+
+.bigDeal__list-inner {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+}
+
+.list-inner-wrapper {
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  transition-property: transform;
+  transform: translate3d(0px, 0px, 0px);
+  box-sizing: content-box;
+  -webkit-box-flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  z-index: 1;
+}
+
+.list-inner-item {
+  left: 0px;
+  width: 115.6px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  height: 100%;
+  position: relative;
+  transition-property: transform;
+}
+
+.css-bigDeal {
+  background-color: var(--white-color);
+  border-radius: 8px;
+}
+
+.css-product-card {
+  position: relative;
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.css-product-card-inner {
+  position: relative;
+    flex: 1 0 auto;
+    margin-bottom: 8px;
+}
+
+.css-product-card-identify {
+
+}
+
+.css-product-card-identify-inner {
+
+}
+
+.css-product-card-image {
+
+}
+
+.css-product-card-image img {
+  
+}
+
+.css-product-card-saved {
+
+}
+
+.css-product-card-saved-inner {
+
+}
+
+.css-product-card-saved-text {
+
+}
+
+.css-product-card-saved-money {
+
+}
+
+.css-product-card-label {
+
+}
+
+.css-product-card-title {
+
+}
+
+.css-product-card-caption {
+
+}
+ 
+.css-product-card-price {
+
+}
+
+.css-product-card-sale {
+
+}
+
+.css-product-card-origin {
+
+}
+
+.css-product-card-net {
+
+}
+
+.css-product-card-discount {
+
+}
+
+.css-product-card-truck {
+  
+}
+
+
 
 
 /* Start noel sale */
@@ -1276,6 +1414,12 @@
 .laptop__pc-subitem:hover .laptop__pc-subitem-subheading {
   color: var(--important-color);
   text-decoration: none;
+}
+
+.laptop__pc-item-link:hover {
+  text-decoration: none;
+  cursor: pointer;
+
 }
 
 /* End laptop - pc sale */
@@ -1595,18 +1739,6 @@
 .for__customer-identify-image:hover {
   transform: scale(1.03);
   transition: transform 0.3s;
-}
-
-.for__customer-identify-inner {
-    
-}
-
-.for__customer-identify-image {
-  
-}
-
-.for__customer-identify-image img  {
-
 }
 
 .for__customer-identify-saved {
