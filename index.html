@@ -130,10 +130,17 @@
                           </div>
 
                           <div class="header__list-item">
-                            <a href="" style="text-decoration: none;" class="header__item-link">
+                            <!-- <a href="" style="text-decoration: none;" class="header__item-link">
                                 <div class="header__item-hotDeal">
                                     <i class="header__item-hotDeal-icon far fa-user"></i>
-                                    <span class="">Đăng nhập</span>
+                                    <span id="js-modalBtn" class="">Đăng nhập</span>
+                                </div>
+                            </a> -->
+
+                            <a href="#simpleModal" style="text-decoration: none;" class="header__item-link">
+                                <div class="header__item-hotDeal">
+                                    <i class="header__item-hotDeal-icon far fa-user"></i>
+                                    <span id="js-modalBtn" class="">Đăng nhập</span>
                                 </div>
                             </a>
                           </div>
@@ -486,61 +493,61 @@
                                             </div>
                                              
                                         </div>
-                                        <div class="bigDeal__footer-subitem bigDeal-col-10 ">
+                                        <!-- <div class="bigDeal__footer-subitem bigDeal-col-10 ">
                                              <div class="bigDeal__list-wrap">
                                                    <div class="bigDeal__list-inner">
                                                         <div class="list-inner-wrapper">
                                                             <div class="list-inner-item ">
-                                                                <div class="css-bigDeal">
+                                                                <div class="sale-bigDeal">
                                                                     <a href="#" class="">
-                                                                        <div class="css-product-card">
-                                                                            <div class="css-product-card-inner">
-                                                                                <div class="css-product-card-identify">
-                                                                                     <div class="css-product-card-identify-inner">
-                                                                                         <div class="css-product-card-image">
-                                                                                             <img src="./assets/img/foruseritem/laptopdellv15.webp" alt="">
+                                                                        <div class="sale-product-card">
+                                                                            <div class="sale-product-card-inner">
+                                                                                <div class="sale-product-card-identify">
+                                                                                     <div class="sale-product-card-identify-inner">
+                                                                                         <div class="sale-product-card-image">
+                                                                                             <img src="./assets/img/bodydeal49++/maylockk.webp" alt="">
                                                                                          </div>
                                                                                      </div>
                         
-                                                                                     <div class="css-product-card-saved">
-                                                                                         <div class="css-product-card-saved-inner">
-                                                                                             <div class="css-product-card-saved-text">
-                                                                                                 TIẾT KIỆM
-                                                                                             </div>
-                        
-                                                                                             <div class="css-product-card-saved-money">
-                                                                                                 2.600.000&nbsp;đ
-                                                                                             </div>
-                                                                                         </div>
-                                                                                     </div>
+                                                                                    <div class="sale-product-card-saved">
+                                                                                    
+                                                                                        <div class="sale-product-card-saved-inner">
+                                                                                                <div class="sale-product-card-saved-text">
+                                                                                                    TIẾT KIỆM
+                                                                                                </div>
+                            
+                                                                                                <div class="sale-product-card-saved-money">
+                                                                                                    2.600.000&nbsp;đ
+                                                                                                </div>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
                         
-                                                                                <div class="css-product-card-label">
-                                                                                    <div class="css-product-card-title">
-                                                                                        Laptop Dell Vostro 15 3510 V5I3305W ( 15.6" Full HD/Intel Core i3-1115G4/8GB/256GB SSD/Windows 11 Home SL 64-bit + Office/1.6kg)
-                                                                                    </div>
+                                                                                <div class="sale-product-card-label">
+                                                                                    <div class="sale-product-card-title">
+                                                                                        Máy lọc không khí Daikin MC55UVM6                                                                                    </div>
                         
-                                                                                    <div class="css-product-card-caption">
+                                                                                    <div class="sale-product-card-caption">
                                                                                         Còn 1 sản phẩm
                                                                                     </div>
                                                                                 </div>
                         
-                                                                                <div class="css-product-card-price">
-                                                                                    <div class="css-product-card-sale">
+                                                                                 <div class="sale-product-card-price">
+                                                                                    <div class="sale-product-card-sale">
                                                                                        9.290.000 &nbsp;đ
                                                                                     </div>
-                                                                                    <div class="css-product-card-origin">
-                                                                                         <div class="css-product-card-net">
+                                                                                    <div class="sale-product-card-origin">
+                                                                                         <div class="sale-product-card-net">
                                                                                             11.890.000 &nbsp;đ
                                                                                          </div>
-                                                                                         <div class="css-product-card-discount">
+                                                                                         <div class="sale-product-card-discount">
                                                                                              -21.87%
                                                                                          </div>
                                                                                     </div>
-                                                                                    <div class="css-product-card-truck">
+                                                                                    <div class="sale-product-card-truck">
                                                                                         <i class="ti-truck"></i>
                                                                                     </div>
-                                                                                </div>
+                                                                                </div> 
                                                                               </div>
                                                                         </div>
                                                                     </a>
@@ -549,7 +556,7 @@
                                                         </div>
                                                    </div>
                                              </div>
-                                        </div>
+                                        </div> -->
                                   </div>
            
                           </div>
@@ -2654,20 +2661,66 @@
         </div>
 
          <!-- Modal layout -->
-    <!-- <div class="modal">
-        <div class="modal__overlay">
-
-        </div>
-
-        <div class="modal__body"> -->
-        
-                <!-- Register-form -->
-                  <!-- 
-                <div class="auth-form">
+     <div  id="js-simpleModal"  class="modal-wrap">
+        <div class="modal">
+            <div class="modal__overlay">
+    
+            </div>
+    
+            <div class="modal__body"> 
+            
+                    <!-- Register-form -->
+                     
+                    <div class="auth-form">
+                            <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form-heading">Đăng ký</h3>
+                                <span class="auth-form__switch-btn">Đăng nhập</span>
+                                </div>
+                                <div class="auth-form__form">
+                                    <div class="auth-form__group">
+                                        <input type="text" class="auth-form__input" placeholder="Email của bạn">
+                                    </div>
+                                    <div class="auth-form__group">
+                                        <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                                    </div>
+                                    <div class="auth-form__group">
+                                        <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                                    </div>
+                                </div>
+                                <div class="auth-form__aside">
+                                    <p class="auth-form__policy-text">
+                                        Bằng việc đăng ký bạn đã đồng ý với phong vũ về 
+                                        <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                        <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                                    </p>
+                                </div>
+                                
+                                <div class="auth-form__controls">
+                                    <button class="btn btn--normal auth-form__controls-back js-closeBtn">TRỞ LẠI</button>
+                                    <button class="btn btn--primary">ĐĂNG KÝ</button>
+                                </div>
+                            </div>
+                        <div class="auth-form__socials">
+                            <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                                <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                                 <span class="auth-form__socials-title">kết nối với Facabook</span>  
+                            </a>
+                            <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                                <i class="auth-form__socials-icon fab fa-google"></i>
+                                <span class="auth-form__socials-title-google"> kết nối với Google</span> 
+                            </a>
+                        </div>
+    
+                    </div>
+                    
+                      <!-- Login-form -->
+    
+                      <!-- <div class="auth-form">
                         <div class="auth-form__container">
                         <div class="auth-form__header">
-                            <h3 class="auth-form-heading">Đăng ký</h3>
-                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                            <h3 class="auth-form-heading">Đăng nhập</h3>
+                            <span class="auth-form__switch-btn">Đăng ký </span>
                             </div>
                             <div class="auth-form__form">
                                 <div class="auth-form__group">
@@ -2676,21 +2729,18 @@
                                 <div class="auth-form__group">
                                     <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
                                 </div>
-                                <div class="auth-form__group">
-                                    <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
-                                </div>
                             </div>
                             <div class="auth-form__aside">
-                                <p class="auth-form__policy-text">
-                                    Bằng việc đăng ký bạn đã đồng ý với phong vũ về 
-                                    <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
-                                    <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
-                                </p>
+                               <div class="auth-form__help">
+                                   <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                                   <span class="auth-form__help-separate"></span>
+                                   <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                               </div>
                             </div>
                             
                             <div class="auth-form__controls">
-                                <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
-                                <button class="btn btn--primary">ĐĂNG KÝ</button>
+                                <button  class="btn btn--normal auth-form__controls-back js-closeBtn">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG NHẬP</button>
                             </div>
                         </div>
                     <div class="auth-form__socials">
@@ -2703,52 +2753,11 @@
                             <span class="auth-form__socials-title-google"> kết nối với Google</span> 
                         </a>
                     </div>
-
-                </div>
-                -->
-                  <!-- Login-form -->
-
-                  <!-- <div class="auth-form">
-                    <div class="auth-form__container">
-                    <div class="auth-form__header">
-                        <h3 class="auth-form-heading">Đăng nhập</h3>
-                        <span class="auth-form__switch-btn">Đăng ký </span>
-                        </div>
-                        <div class="auth-form__form">
-                            <div class="auth-form__group">
-                                <input type="text" class="auth-form__input" placeholder="Email của bạn">
-                            </div>
-                            <div class="auth-form__group">
-                                <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
-                            </div>
-                        </div>
-                        <div class="auth-form__aside">
-                           <div class="auth-form__help">
-                               <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
-                               <span class="auth-form__help-separate"></span>
-                               <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
-                           </div>
-                        </div>
-                        
-                        <div class="auth-form__controls">
-                            <button class="btn btn--normal auth-form__controls-back">TRỞ LẠI</button>
-                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
-                        </div>
-                    </div>
-                <div class="auth-form__socials">
-                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
-                        <i class="auth-form__socials-icon fab fa-facebook-square"></i>
-                         <span class="auth-form__socials-title">kết nối với Facabook</span>  
-                    </a>
-                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
-                        <i class="auth-form__socials-icon fab fa-google"></i>
-                        <span class="auth-form__socials-title-google"> kết nối với Google</span> 
-                    </a>
-                </div>
-
-                 </div> 
-        </div> -->
-    </div>
+    
+                     </div>  -->
+            </div> 
+        </div>
+     </div>
 <!-- 
     <script>
         
@@ -2778,6 +2787,37 @@
         $(document).on('click', '.page-number-wrap .page-number-item', function() {
         $(this).addClass('active').siblings().removeClass('active')
         })
+    </script>
+
+    <script>
+        // Get modal element
+        var modal = document.getElementById('js-simpleModal') ;
+
+        // Get open modal click
+        var modalBtn = document.getElementById('js-modalBtn') ;
+
+        // Get comeback modal click
+        var closeBtn = document.getElementsByClassName('js-closeBtn')[0] ;
+
+        //  listen for open modal click 
+
+        modalBtn.addEventListener('click', openModal);
+
+        //  listen for close modal click 
+
+        closeBtn.addEventListener('click', closeModal);
+
+        // Function to open modal
+
+        function openModal() {
+            modal.style.display = 'block' ;
+        }
+        
+        // Function to close modal
+
+        function closeModal() {
+            modal.style.display = 'none' ;
+        }
     </script>
 </body>
 </html>
